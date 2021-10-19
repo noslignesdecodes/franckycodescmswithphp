@@ -1,9 +1,35 @@
-:root
-{
-    --mainColor: #808080;
+:root {
+    --mainColor: #000000;
+    --lightBg: #ffffff;
+    --linkColor: #44aadd;
+    --grayColor: #808080;
+    --fullWidth: 100%;
+    --lightBorder: #f8f8f8;
+    --topbarHeight: 50px;
+    --topMargin: 5px;
 }
 
-body
-{
+body {
     color: var(--mainColor);
+    background: var(--lightBg);
+}
+
+a:link,
+a:visited {
+    color: var(--linkColor);
+}
+
+.snsTopbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: var(--topbarHeight);
+    width: var(--fullWidth);
+    z-index: 11;
+    border-bottom: 1px solid var(--lightBorder);
+}
+
+.mainCore {
+    margin-top: var(--topbarHeight);
+    padding: 20px;
 }
