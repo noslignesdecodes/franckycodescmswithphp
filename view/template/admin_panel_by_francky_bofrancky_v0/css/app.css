@@ -1,0 +1,932 @@
+.reset {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.openSans {
+  font-family: 'Open Sans';
+}
+.block {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.fullWidth {
+  display: block;
+  min-width: 100%;
+  width: 100%;
+}
+.ib {
+  display: inline-block;
+  vertical-align: top;
+}
+.rounded {
+  border-radius: 2px;
+}
+.alignCenter {
+  text-align: center;
+}
+.alignLeft {
+  text-align: left;
+}
+.alignRight {
+  text-align: right;
+}
+.floatLeft {
+  float: left;
+}
+.floatRight {
+  float: right;
+}
+.bold {
+  font-weight: bold;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.lowercase {
+  text-transform: lowercase;
+}
+.lightBt {
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #fff;
+  min-width: 100px;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+.darkBt,
+a.darkBt:link,
+a.darkBt:visited {
+  display: inline-block;
+  vertical-align: top;
+  border: 2px solid #282828;
+  min-width: 100px;
+  border-radius: 2px;
+  color: #282828;
+  text-align: center;
+  cursor: pointer;
+}
+a.darkBt:hover,
+.darkBt:hover {
+  background: #282828;
+  color: #fff;
+}
+a.lightBt:link,
+a.lightBt:visited {
+  color: #fff;
+  text-align: center;
+}
+.lightBt:hover,
+a.lightBt:hover {
+  background: #fff;
+  color: #282828;
+  font-weight: bold;
+}
+.cuteFooter {
+  margin-top: 5px;
+  border-top: 1px solid #f8f8f8;
+  text-align: right;
+}
+.redBt,
+a.redBt:link,
+a.redBt:visited {
+  display: inline-block;
+  vertical-align: top;
+  color: #f75561;
+  text-align: center;
+  border: 1px solid #f75561;
+  min-width: 50px;
+  border-radius: 2px;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  margin: 2px;
+}
+.redBt:hover,
+a.redBt:hover {
+  background: #f75561;
+  color: #fff;
+  font-weight: bold;
+}
+.redBg {
+  background: #dd3b77;
+}
+.centerBox {
+  margin: 0 auto;
+}
+.imenu li {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: top;
+}
+.noStyle {
+  list-style-type: none;
+}
+.ib2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+}
+.ib3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+a:link,
+a:visited {
+  color: #fff;
+  text-decoration: none;
+}
+.redBg {
+  background: #f75561;
+}
+.iconBt,
+a.iconBt {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.static {
+  position: static;
+}
+.fixed {
+  position: fixed;
+}
+.lightBg {
+  background: #fff;
+}
+.pauseBt {
+  position: absolute;
+  top: 45%;
+  left: 45%;
+  z-index: 11;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.7);
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 3.2;
+  cursor: pointer;
+}
+.pauseBt:hover {
+  border: 1px solid #f75561;
+}
+.borderLess,
+.noBorder {
+  border: none;
+}
+.redText {
+  color: #f75561;
+}
+.loadingBt {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  bottom: 40%;
+  left: 44%;
+  z-index: 15;
+  padding: 5px;
+}
+.nullBg {
+  background: transparent;
+}
+.prevBt {
+  position: absolute;
+  top: 45%;
+  left: 20px;
+  z-index: 11;
+  color: #fff;
+  background: #282828;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-weight: bold;
+  text-align: center;
+  line-height: 3;
+  cursor: pointer;
+  display: none;
+}
+.isBt {
+  cursor: pointer;
+}
+.nextBt {
+  cursor: pointer;
+  position: absolute;
+  text-align: center;
+  top: 45%;
+  right: 20px;
+  z-index: 11;
+  color: #fff;
+  background: #282828;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  font-weight: bold;
+  line-height: 3;
+  display: none;
+}
+.italic {
+  font-style: italic;
+}
+.toTop {
+  z-index: 11;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.prevBt:hover,
+.nextBt:hover {
+  height: 55px;
+  width: 55px;
+  line-height: 3.5;
+}
+.circle {
+  border-radius: 100%;
+}
+.darkBg {
+  background: #282828;
+}
+.b7 {
+  display: block;
+  width: 70%;
+}
+.b8 {
+  display: block;
+  width: 80%;
+}
+.b5 {
+  display: block;
+  width: 50%;
+}
+.fb {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/main_icons.png') top 0 left 0 no-repeat, transparent;
+}
+.youtube {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/main_icons.png') top 0 left -52px no-repeat, transparent;
+}
+.instagram {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/main_icons.png') top 0 left -78px no-repeat, transparent;
+}
+.twitter {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/main_icons.png') top 0 left -25px no-repeat, transparent;
+}
+.searchIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/main_icons.png') top 0 right -3px no-repeat, transparent;
+}
+.mobileMenuIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/main_icons.png') top 0 right -30px no-repeat, transparent;
+}
+@media (max-width: 800px) {
+  .ib2,
+  .ib3,
+  .b5,
+  .b8,
+  .b7 {
+    display: block;
+    width: 100%;
+  }
+}
+/*
+
+* All fonts goes here
+*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url("fonts/OpenSans-Light.ttf");
+}
+.myBtn {
+  display: inline-block;
+  vertical-align: top;
+  color: #808080;
+  border: 1px solid #808080;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 50px;
+  cursor: pointer;
+}
+.greenBt,
+.greenBt:link,
+.greenBt:visited {
+  display: inline-block;
+  vertical-align: top;
+  color: #808080;
+  border: 1px solid #808080;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 50px;
+  cursor: pointer;
+  color: #7ED097;
+  border: 1px solid #7ED097;
+  margin: 2px;
+}
+.greenBt:hover,
+.greenBt:link:hover,
+.greenBt:visited:hover {
+  background: #7ED097;
+  color: #fff;
+}
+.blueBt,
+.blueBt:link,
+.blueBt:visited {
+  display: inline-block;
+  vertical-align: top;
+  color: #808080;
+  border: 1px solid #808080;
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 50px;
+  cursor: pointer;
+  color: #2BB6CF;
+  border: 1px solid #2BB6CF;
+  margin: 2px;
+}
+.blueBt:hover,
+.blueBt:link:hover,
+.blueBt:visited:hover {
+  background: #2BB6CF;
+  color: #fff;
+}
+body {
+  background: #eee;
+  font-family: 'Open Sans';
+}
+.roundedBorder {
+  border-radius: 5px;
+}
+/*modal*/
+.modalContainer {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  overflow-y: scroll;
+}
+.modalContainer .modalCloseBt {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.modalContainer .modalCloseBt:hover {
+  font-weight: bold;
+}
+.modalContainer .modalBox {
+  background: #fff;
+  width: 250px;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 55px;
+  padding: 35px;
+  border: 1px solid #81dafc;
+  position: relative;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+.modalContainer .modalBox .imgContainer {
+  display: block;
+}
+.modalContainer .modalBox .imgContainer img {
+  display: inline-block;
+  vertical-align: top;
+  width: 150px;
+}
+.modalContainer .modalBox .imgContainer img:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+.showGalleriesContainer a:link,
+.showGalleriesContainer a:visited {
+  color: #2BB6CF;
+}
+.icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  backgrond: #282828;
+  background: url('../img/basicicons.png') no-repeat top 0 left 0;
+}
+.alertIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  backgrond: #282828;
+  background: url('../img/basicicons.png') no-repeat top 0 left 0;
+  background: url('../img/basicicons.png') no-repeat top -32px left -35px;
+}
+.inboxIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  backgrond: #282828;
+  background: url('../img/basicicons.png') no-repeat top 0 left 0;
+  background: url('../img/basicicons.png') no-repeat top 0 left -70px;
+}
+.uploadIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  backgrond: #282828;
+  background: url('../img/basicicons.png') no-repeat top 0 left 0;
+  background: url('../img/basicicons.png') no-repeat top -32px left 0;
+}
+.newGalleryIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  backgrond: #282828;
+  background: url('../img/basicicons.png') no-repeat top 0 left 0;
+  background: url('../img/basicicons.png') no-repeat top -65px left -8px;
+}
+.updateIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  backgrond: #282828;
+  background: url('../img/basicicons.png') no-repeat top 0 left 0;
+  background: url('../img/basicicons.png') no-repeat top 0 left -35px;
+}
+.leftBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  min-width: 200px;
+  z-index: 11;
+  background: #282828;
+  color: #fff;
+  height: 100%;
+  min-height: 100%;
+  padding: 50px;
+  padding-top: 55px;
+}
+.leftBar h2 {
+  margin-bottom: 20px;
+}
+.leftBar:hover {
+  overflow-y: scroll;
+}
+.total {
+  color: #2BB6CF;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+}
+.total:hover {
+  font-weight: bold;
+}
+.messageContent {
+  text-align: left;
+}
+.messageContent div.inbox {
+  min-width: 100%;
+  width: 100%;
+  min-height: 50px;
+  background: #fff;
+  border-left: 2px solid transparent;
+  margin: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.messageContent div.inbox:hover {
+  border-color: #4ad;
+}
+.messageContent div.inbox h2 a:link,
+.messageContent div.inbox h2 a:visited {
+  color: #282828;
+}
+.hide {
+  display: none;
+}
+.adminTopbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 12;
+  background: #282828;
+}
+.adminTopbar .topbarContainer {
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+}
+.adminTopbar .topbarContainer .mainMenuIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/admin_icons.png') top -8px left -60px no-repeat, transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+}
+.adminTopbar .topbarContainer .mainMenuIcon:hover {
+  background-color: #000;
+}
+.adminTopbar .topbarContainer .appMessagesContainer {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  text-align: center;
+}
+.adminTopbar .topbarContainer .appMessages:link,
+.adminTopbar .topbarContainer .appMessages:visited,
+.adminTopbar .topbarContainer .appMessages {
+  display: block;
+  height: 50px;
+  width: 50px;
+  line-height: 3;
+  position: relative;
+  font-size: 95%;
+}
+.adminTopbar .topbarContainer .appMessages:link:hover,
+.adminTopbar .topbarContainer .appMessages:visited:hover,
+.adminTopbar .topbarContainer .appMessages:hover {
+  background: #000;
+}
+.adminTopbar .topbarContainer .appNotif {
+  display: block;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 2px;
+  right: -20px;
+  line-height: 1.5;
+  font-weight: bold;
+  border-radius: 100%;
+  color: #fff;
+  background: #dd3b77;
+  background: #f75561;
+}
+.adminTopbar .topbarContainer .welcomeAdmin {
+  color: #4ad;
+  height: 50px;
+  border-bottom: 2px solid #4ad;
+  cursor: pointer;
+  padding: 2px;
+}
+.adminTopbar .topbarContainer .welcomeAdmin:hover {
+  background-color: #000;
+}
+.customEditor {
+  padding: 50px;
+}
+.customEditor a:link,
+.customEditor a:visited {
+  color: #81dafc;
+}
+input,
+textarea {
+  display: block;
+  min-width: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #2BB6CF;
+  background: transparent;
+}
+textarea {
+  min-height: 200px;
+}
+.success {
+  border-left: 2px solid #7dc864;
+  padding: 20px;
+}
+.error {
+  border-left: 2px solid #f75561;
+  padding: 20px;
+}
+select {
+  border: 1px solid #2BB6CF;
+  min-height: 35px;
+}
+.adminLeftSearch {
+  display: block;
+  min-width: 100%;
+  width: 100%;
+  padding-top: 15px;
+}
+.adminLeftSearch input[type=text] {
+  display: block;
+  min-width: 100%;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #4ad;
+  color: #fff;
+  background: transparent;
+  padding: 2px;
+  padding-left: 5px;
+}
+.adminLeftSearch .searchIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  background: url('../img/admin_icons.png') top -8px left -25px no-repeat, transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+.adminLeftSearch .searchIcon:hover {
+  background-color: #000;
+}
+.appFile a:hover {
+  text-decoration: underline;
+}
+.appCore {
+  text-align: center;
+  text-align: right;
+  width: 60%;
+  margin-left: 25%;
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+.appCore article {
+  background: #fff;
+  width: 45%;
+  margin: 10px;
+  display: inline-block;
+  vertical-align: top;
+  min-height: 250px;
+}
+.appCore .blueLink a:link,
+.appCore .blueLink a:visited {
+  color: #2BB6CF;
+}
+.appCore .blueLink a:link:hover,
+.appCore .blueLink a:visited:hover {
+  text-decoration: underline;
+}
+video {
+  max-width: 100%;
+}
+article {
+  padding: 20px;
+}
+article a:link,
+article a:visited {
+  color: #81dafc;
+}
+article h2 {
+  text-align: left;
+  color: #2BB6CF;
+  padding: 10px;
+}
+article:hover {
+  border-top: 2px solid #2BB6CF;
+}
+.adminProfileBt {
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  padding: 5px;
+  text-align: center;
+}
+.adminProfileBt:hover {
+  background-color: #000;
+}
+.adminIcon {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
+  background: url('../img/admin_icons.png') top 0 left 2px no-repeat, transparent;
+  cursor: pointer;
+}
+.adminMainMenu {
+  margin-top: 50px;
+}
+.adminMainMenu li {
+  list-style-type: none;
+  display: block;
+}
+.adminMainMenu li a:link,
+.adminMainMenu li a:visited {
+  display: block;
+  color: #fff;
+  padding: 2px;
+  position: relative;
+}
+.adminMainMenu li a::first-letter {
+  text-transform: uppercase;
+}
+.adminMainMenu li a:hover {
+  background: #000;
+  border-left: 2px solid #4ad;
+}
+.p25 {
+  padding: 25px;
+}
+article img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+.customEditor a:link,
+.customEditor a:visited {
+  color: #81dafc;
+}
+.customEditor img {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 100%;
+}
+.customEditorMenus {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 35px;
+  background: #282828;
+}
+.modalContainer .modalFull {
+  width: 80%;
+  min-height: 400px;
+}
+.galleriesSample img {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 50px;
+  width: 25%;
+}
+.searchMenu {
+  display: block;
+  min-height: 50px;
+  margin-bottom: 10px;
+  text-align: left;
+  padding-left: 25px;
+}
+.searchMenu li {
+  display: inline-block;
+  vertical-align: top;
+}
+.searchMenu li a:link,
+.searchMenu li a:visited {
+  display: block;
+  height: 50px;
+  min-width: 50px;
+  color: #282828;
+}
+.searchMenu li a:link:hover,
+.searchMenu li a:visited:hover {
+  border-bottom: 2px solid #2BB6CF;
+}
+.searchMenu li a.current {
+  border-bottom: 2px solid #2BB6CF;
+}
+.pagination {
+  min-height: 100px;
+}
+.pagination a:link,
+.pagination a:visited {
+  display: inline-block;
+  vertical-align: top;
+  color: #808080;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  min-width: 50px;
+  cursor: pointer;
+  color: #2BB6CF;
+  border: 1px solid #2BB6CF;
+  margin: 2px;
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
+  padding: 5px;
+  text-align: center;
+}
+.pagination a:link:hover,
+.pagination a:visited:hover {
+  background: #2BB6CF;
+  color: #fff;
+}
+.pagination-content {
+  min-height: 400px;
+  height: 400px;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.pagination-content article {
+  min-height: 400px;
+}
+@media (max-width: 800px) {
+  .modalContainer .modalBox {
+    width: 80%;
+  }
+  .leftBar {
+    display: none;
+    width: 80%;
+  }
+  .appCore {
+    margin: 0;
+    display: block;
+    min-width: 100%;
+    width: 100%;
+    padding: 5px;
+    padding-top: 100px;
+    text-align: center;
+  }
+  .appCore .ib,
+  .appCore .ib2,
+  .appCore .b7,
+  .appCore article {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
+.copyright {
+  color: #fff;
+  display: block;
+  margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  padding-top: 5px;
+}

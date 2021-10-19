@@ -1,0 +1,218 @@
+:root
+{
+	--mainBorderColor: #f8f8f8;
+	--mainLinkColor: #333;
+	--mainLightColor: #fff;
+	--eeeColor: #eee;
+	--fullWidth: 100%;
+	--defaultPadding: 20px;
+	--minHeight: 600px;
+	--defaultLightBorder: 1px solid #f8f8f8;
+	--darkColor: #000;
+	--bannerHeight: 400px;
+	--minHeight200px: 200px;
+	--bannerBg: #808080;
+	--linkHeight: 50px;
+	--mainColorCuteOrange: #fee7d5;
+	--mainColorCuteGreen: #44eecc;
+	--mainColorRose: #ee4499;
+	--mainColor: #000;
+	--inputBorderColor: #ddd;
+	
+}
+body
+{
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: var(--mainColor);
+	
+}
+.appMainHeader
+{
+	margin-top: 50px;
+	border-bottom:  var(--defaultLightBorder);
+	display: grid;
+	grid-template-columns: 150px 70%;
+}
+
+.appMainBt
+{
+	display: grid;
+	grid-template-columns: 25px;
+	width: 32px;
+	height: 25px;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	z-index: 12;
+	cursor: pointer;
+	text-align: center;
+	
+}
+.appMainBt:hover
+{
+	background: var(--eeeColor);
+}
+
+.appMainBt div
+{ 
+	background: var(--mainColor);
+	 
+	height: 2px;
+}
+.appBanner
+{
+	
+	background: var(--eeeColor); 
+	min-height: var(--bannerHeight);
+	/*display: grid;
+	grid-template-columns: 25%;
+	*/
+	text-align: center;
+	color: var(--mainColor);
+	
+}
+ 
+.bannerLine 
+{
+	width: 2px;
+	height: 100px;
+	background: var(--mainColor);
+	position: absolute;
+	top: 30%;
+	left: 50%;
+}
+.appTopMenu
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: var(--fullWidth);
+	height: 35px;
+	background: var(--mainLightColor);
+	border-bottom: var(--defaultLightBorder);
+	text-align: right;
+	z-index: 11;
+}
+.appTopMenu li a:link,
+.appTopMenu li a:visited
+{
+	display: block;
+	min-height: 35px;
+	padding: 5px;
+	border-bottom: 2px solid transparent;
+}
+.appTopMenu li 
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.appTopMenu li a:hover
+{
+	border-color: var(--mainColor);
+}
+.appMainMenu li
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.appMainMenu li a:link,
+.appMainMenu li a:visited
+{
+	display: block;
+	min-height: var(--linkHeight);
+	padding: 5px;
+	border-bottom: 2px solid transparent;
+}
+.appMainMenu li a:hover
+{
+	border-bottom: 2px solid var(--mainColor);
+}
+
+a:link,
+a:visited
+{
+	color: var(--mainLinkColor);
+	text-decoration: none;
+}
+.appMainFooter
+{
+	background: var(--eeeColor);
+	width: var(--fullWidth);
+	display: grid;
+	grid-template-columns: 25% 25% 25% 25%;
+	min-height: var(--minHeight200px);
+	padding: 20px;
+}
+
+.appCore
+{
+	padding: var(--defaultPadding);
+	min-height: var(--minHeight);
+	display: grid;
+	grid-template-columns: 80% 20%;
+}
+
+.appCore img
+{
+	max-width: 250px;
+	display: inline-flex;
+	flex-wrap: wrap;
+}
+.flex-gap-test
+{
+	display: inline-flex;
+	flex-wrap: wrap;
+	gap: 16px;
+}
+.mainContainer
+{
+	
+}
+
+input, textarea,select
+{
+	border: transparent;
+	border-bottom: 2px solid var(--mainColor);
+	padding: 5px;
+ 
+	display: block;
+	width: var(--fullWidth);
+}
+.mainBt
+{
+    display: inline-flex;
+	flex-wrap: wrap;
+	min-width: 50px;
+	padding: 5px;
+	color: var(--mainColor);
+	border: 2px solid var(--mainColor);
+	border-radius: 5px;
+	margin: 2px;
+	cursor: pointer;
+}
+.mainBt:hover
+{
+	background: var(--mainColor);
+	color: var(--mainLightColor);
+}
+
+@media (max-width: 800px)
+{
+	.appMainHeader
+	{
+		grid-template-columns: var(--fullWidth);
+	}
+	.appCore 
+	{
+		grid-template-columns: var(--fullWidth);
+	}
+	.appMainFooter
+	{
+		grid-template-columns: var(--fullWidth);
+	}
+}

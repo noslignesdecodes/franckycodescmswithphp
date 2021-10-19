@@ -1,0 +1,538 @@
+@import "variables";
+
+.lightBorder {
+    border: @mainBorderWidth @mainBorderStyle @lightBorderColor;
+}
+
+.reset {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.hide {
+    display: none;
+}
+
+.errorPwd
+{
+    color: @redColor;
+    background: @favoriteBackground;
+    padding: 5px;
+  
+}
+.block {
+    display: block;
+}
+
+.inlineBlock {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.centerText {
+    text-align: center;
+}
+
+body {
+    background: @greatLightBg;
+    color: @mainColor;
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url("fonts/OpenSans-Light.ttf");
+}
+
+* {
+    font-family: 'OpenSansLight';
+    .reset();
+}
+
+a:link,
+a:visited {
+    color: @linkColor;
+    text-decoration: none;
+    .inlineBlock();
+}
+
+a.submitBt:hover {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#topbarMenu {
+    .inlineBlock();
+    padding-left: 20px;
+}
+
+.relative {
+    position: relative;
+}
+
+
+#mainTopbar {
+    height: @topbarHeight;
+    position: @topbarPosition;
+    width: @fullWidth;
+    top: @nullValue;
+    left: @nullValue;
+    border-bottom: @mainBorderWidth @mainBorderStyle @lightBorderColor;
+    .alignCenter();
+
+
+    li {
+        .inlineBlock();
+
+
+        a:link,
+        a:visited {
+            .block();
+            color: @blackColor;
+            text-decoration: none;
+            line-height: 3;
+            height: 50px;
+            padding: 2px;
+            .relative();
+
+        }
+
+        a:hover {
+            /*text-decoration: underline;*/
+            border-bottom: 2px solid @linkColor;
+        }
+
+
+
+        .subMenu {
+            .hide();
+            background: @mainBackground;
+            border: 1px solid @lightBorderColor;
+            border-top: 2px solid @linkColor;
+            .absolute();
+            width: 200px;
+            min-height: 100px;
+            z-index: 9999;
+
+            li {
+                .block();
+                width: @fullWidth;
+
+                a {
+                    text-align: left;
+
+                }
+
+                a:hover {
+                    border-color: @mainBackground;
+                }
+            }
+        }
+    }
+}
+
+.absolute {
+    position: absolute;
+}
+
+#site-container {
+    margin-top: @topbarHeight;
+    padding: 50px;
+    /*background: @mainBackground;*/
+    min-height: 600px;
+}
+
+.appTotal {
+    position: absolute;
+    color: @linkColor;
+    font-size: 85%;
+    top: -5px;
+    right: 5px;
+    font-weight: bold;
+}
+
+#mainFooter {
+    .centerText();
+
+    min-height: 200px;
+    padding: 25px;
+    color: @grayColor;
+
+    p {
+        margin-bottom: 5px;
+    }
+}
+
+
+article {
+    min-height: 200px;
+    border: 1px solid @lightBorderColor;
+
+    margin-bottom: @articleMargin;
+    background: @mainBackground;
+
+    &:hover {
+        border-top: 2px @mainBorderStyle @linkColor;
+    }
+}
+
+.appStat {
+    .alignCenter();
+
+    article {
+        .inlineBlock();
+        width: 45%;
+        min-width: 250px;
+        padding: 50px;
+        height: 400px;
+        max-height: 400px;
+        h2 {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    h1 {
+        border-left: none;
+    }
+}
+
+#app-pagination {
+
+    a:link,
+    a:visited {
+        border: 1px solid @linkColor;
+        padding: 5px;
+        min-width: 32px;
+        .roundedBorder();
+        .alignCenter();
+        margin: 5px;
+
+    }
+
+    a:hover {
+        text-decoration: none;
+        .isButton();
+        background: @favoriteBackground;
+    }
+}
+
+#searchMainMenu {
+    height: 50px;
+    margin-bottom: 20px;
+
+    li {
+
+        a:link,
+        a:visited {
+            .block();
+            padding: 5px;
+            color: @grayColor;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    }
+
+}
+
+.searchContainer {
+    .inlineBlock();
+
+
+    #searchQuery {
+        border-color: transparent;
+        border-bottom: 1px solid @favoriteGreenColor;
+        background: @favoriteBackground;
+        /*box-shadow: 2px 3px 4px @favoriteGreenColor;*/
+        /*.roundedBorder();  */
+        border-radius: 0;
+        padding: 5px;
+        min-width: 150px;
+        padding-left: 32px;
+    }
+}
+
+h1 {
+    background: transparent;
+    min-height: @topbarHeight;
+    padding: 10px;
+    /*border: 1px solid @lightBorderColor; */
+    border-left: 2px solid @favoriteGreenColor;
+    margin-bottom: 20px;
+}
+
+h2 {}
+
+p {
+    margin-bottom: 20px;
+}
+
+article h2 a:link,
+article h2 a:visited {
+    color: @grayColor;
+
+}
+
+ul {
+    li {
+        list-style-type: none;
+    }
+}
+
+.inlineMenu {
+    li {
+        .inlineBlock();
+    }
+}
+
+.timelines {
+
+    .block();
+    min-height: 600px;
+    padding: 20px;
+    .roundedBorder();
+
+    .someTimeline {
+        background: @favoriteBackground;
+        .roundedBorder();
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+table {
+    max-width: @fullWidth;
+    min-width: @fullWidth;
+    max-width: @fullWidth;
+}
+
+table,
+td,
+tr,
+th {
+
+    border-collapse: collapse;
+    .lightBorder();
+    padding: 5px;
+}
+
+td {
+    color: @blackColor;
+}
+
+th {
+    color: @favoriteGreenColor;
+}
+
+td,
+tr,
+th {
+
+    min-height: 50px;
+
+    &:hover {
+        background: @favoriteBackground;
+
+    }
+}
+
+table {
+    width: @fullWidth;
+    min-width: @fullWidth;
+}
+
+.roundedBorder {
+    border-radius: 5px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+/*modal*/
+.modalContainer {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    .fixed();
+    top: @nullValue;
+    left: @nullValue;
+    width: @fullWidth;
+    height: @fullWidth;
+    .hide();
+    overflow-y: scroll;
+
+    .modalCloseBt {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    .modalBox {
+        background: @mainBackground;
+        width: 250px;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 55px;
+        padding: 35px;
+        border: 1px solid @lightBorderColor;
+        position: relative;
+        .roundedBorder();
+        word-wrap: break-word;
+    }
+}
+
+video {
+    background: #808080;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+/*inputs customized style*/
+input,
+select,
+textarea,
+.customEditor {
+    border: 1px solid @lightBorderColor;
+    margin-bottom: 5px;
+    padding: 5px;
+    min-width: 150px;
+    .block();
+    width: @fullWidth;
+    .roundedBorder();
+}
+
+form {
+    margin-top: 10px;
+
+    label {
+        .inlineBlock();
+        min-width: 150px;
+        .bold();
+
+    }
+
+    label.submitBt {
+        font-weight: normal;
+    }
+
+    .submitBt {
+        margin-left: 5px;
+    }
+}
+
+.customBtn {
+    .inlineBlock();
+    min-width: 150px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.simpleBtn {
+    border: 1px solid #ddd;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.alignCenter {
+    text-align: center;
+}
+
+.isButton {
+    cursor: pointer;
+}
+
+#mainTopbar {
+    background: @mainBackground;
+    z-index: 9999;
+
+    box-shadow: 5px 8px 9px @favoriteBackground;
+
+    #appName:link,
+    #appName:visited {
+
+        .bold();
+        .inlineBlock();
+        color: @darkBackground;
+        padding: 2px;
+        line-height: 1.5;
+        /*border: 1px solid @orangeColor;*/
+        margin: 5px;
+        .roundedBorder();
+        height: 40px;
+        min-width: 100px;
+        .alignCenter();
+        .isButton();
+        font-size: 125%;
+
+        &:hover {
+            color: @linkColor;
+            text-decoration: none;
+        }
+    }
+
+    .currentPage {
+        border-bottom: 2px solid @linkColor;
+    }
+}
+
+.submitBt {
+    border: 1px solid @linkColor;
+    min-width: 50px;
+    color: @linkColor;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.submitBt:hover {
+    background: @favoriteBackground;
+}
+
+.currentPage {
+    border-bottom: 2px solid @linkColor;
+}
+
+#mainMenuBt {
+    background: @favoriteBackground;
+    border-radius: 100%;
+    border: 2px solid orange;
+    .hide();
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 38px;
+    height: 38px;
+}
+
+#mainMenuBt img {
+    .block();
+    width: 25px;
+    margin: 0 auto;
+    margin-top: 4px;
+
+}
+
+@media (max-width: 800px) {
+
+    #topbarMenu {
+        .hide();
+    }
+
+    #mainMenuBt {
+        .block();
+    }
+}

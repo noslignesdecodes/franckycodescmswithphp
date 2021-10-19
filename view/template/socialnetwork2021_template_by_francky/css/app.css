@@ -1,0 +1,9 @@
+:root
+{
+    --mainColor: #808080;
+}
+
+body
+{
+    color: var(--mainColor);
+}

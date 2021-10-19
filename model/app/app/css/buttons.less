@@ -1,0 +1,42 @@
+@greenColor: #7ED097;
+@blueColor: #2BB6CF;
+@whiteColor: #fff;
+@defaultBtColor: #808080;
+.myBtn
+{
+	display: inline-block;
+	vertical-align: top;
+	color: @defaultBtColor;
+	border: 1px solid @defaultBtColor;
+	padding: 5px;
+	border-radius: 5px;
+	min-width: 50px;
+	cursor: pointer;
+}
+.greenBt, 
+.greenBt:link,
+.greenBt:visited
+{
+	.myBtn();
+	 
+	color: @greenColor;
+	border: 1px solid @greenColor;
+	&:hover
+	{
+		background: @greenColor;
+		color: @whiteColor;
+	}
+}
+.blueBt,
+.blueBt:link,
+.blueBt:visited
+{
+	.myBtn();
+	color: @blueColor;
+	border: 1px solid @blueColor;
+	&:hover
+	{
+		background: @blueColor;
+		color: @whiteColor;
+	}
+}

@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+ 
+RewriteRule ^([a-zA-Z0-9\_\-\/\?=+]*)$ index.php?page=$1 
+RewriteRule ^([a-zA-Z0-9\_\-\/\?=+]*)/$ index.php?page=$1 
+ 
+  
+RewriteCond %{REQUEST_FILENAME} !-d  
+ 
+RewriteCond %{REQUEST_FILENAME}\.php -f  
+ 
+RewriteRule ^(.*)/$ $1.php
+ 
+errorDocument 404  /appgestionfrancky/home/ 
+RedirectMatch 404 (?i)/\.(inc.php|inc|htpasswd|htaccess|bash|git|hg|log|svn|swp|tar)
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "\config.inc.php$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+</IfModule>

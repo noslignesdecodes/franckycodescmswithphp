@@ -1,0 +1,1 @@
+Installing template, copyright cms franckycodes..

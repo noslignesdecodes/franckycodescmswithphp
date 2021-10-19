@@ -1,0 +1,600 @@
+@import 'lib/variables.less';
+@import 'lib/reset.less';
+@import 'variables.less';
+@import 'lib/fonts.less';
+@import 'lib/buttons.less';
+
+body 
+{
+	background: @lightBg;
+	.openSans();
+}
+
+.roundedBorder
+{
+	border-radius: 5px;
+}
+/*modal*/
+.modalContainer {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 9999;
+    .fixed();
+    top: @nullValue;
+    left: @nullValue;
+    width: @fullWidth;
+    height: @fullWidth;
+    .hide();
+    overflow-y: scroll;
+
+    .modalCloseBt {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+
+    .modalBox {
+        background: @mainLightBg;
+        width: 250px;
+        width: 40%;
+        margin: 0 auto;
+        margin-top: 55px;
+        padding: 35px;
+        border: 1px solid @niceBlue;
+        position: relative;
+        .roundedBorder();
+        word-wrap: break-word;
+        .imgContainer
+        {
+        	.block();
+
+        	img 
+        	{
+        		.ib();
+        		width: 150px;
+
+        		&:hover
+        		{
+        			background: rgba(0,0,0,0.7);
+        		}
+        	}
+        }
+    }
+}
+.showGalleriesContainer
+{
+    a:link, 
+    a:visited
+    {
+        color: @blueColor;
+    }
+}
+.icon
+{
+	.ib();
+	width: 30px;
+	height: 30px;
+	min-width: 30px;
+	min-height: 30px;
+	backgrond: @darkText;
+	background: url('../img/basicicons.png') no-repeat top 0 left 0;
+}
+.alertIcon
+{
+	.icon();
+	background: url('../img/basicicons.png') no-repeat top -32px left -35px;
+}
+.inboxIcon
+{
+	.icon();
+	background: url('../img/basicicons.png') no-repeat top 0 left -70px;
+}
+
+.uploadIcon
+{
+	.icon();
+	background: url('../img/basicicons.png') no-repeat top -32px left 0;
+}
+
+
+.newGalleryIcon
+{
+	.icon();
+	background: url('../img/basicicons.png') no-repeat top -65px left -8px;
+}
+.updateIcon
+{
+	.icon();
+	background: url('../img/basicicons.png') no-repeat top 0 left -35px;
+}
+
+.leftBar 
+{
+	.fixed();
+	top: 0;
+	left: 0;
+	width: 25%;
+	min-width: 200px;
+	z-index: 11;
+	background: @darkBg;
+	color: @mainLightBg;
+	height: @fullWidth;
+	min-height: @fullWidth;
+	padding: 50px;
+	padding-top: 55px;
+	h2 
+	{
+		margin-bottom: 20px;
+	}
+	&:hover
+	{
+		overflow-y: scroll;
+	}
+}
+.total
+{
+	// background: @redColor;
+	// color: @mainLightBg; 
+	color: @blueColor;
+	.absolute();
+	top: 0;
+	right: 0;
+	width: 24px;
+	height: 24px;
+	.ib();
+
+	// .circle();
+	.alignCenter();
+	&:hover
+	{
+		.bold();
+	}
+}
+
+.messageContent
+{
+	.alignLeft();
+
+	div.inbox
+	{
+		min-width: @fullWidth;
+		width: @fullWidth;
+		min-height: 50px;
+		background: @mainLightBg;
+		border-left: 2px solid transparent;
+		margin: 5px;
+		margin-bottom: 20px;
+		padding: 20px;
+		&:hover
+		{
+			border-color: @cuteBlue;
+		}
+		h2 
+		{
+			a:link,a:visited
+			{
+				color: @darkText;
+			}
+		}
+	}
+
+
+}
+.hide 
+{
+	display: none;
+}
+.adminTopbar
+{
+	.fixed();
+	top: 0;
+	left: 0;
+	width: @fullWidth;
+	height: 50px;
+	z-index: 12;
+	background: @darkBg;
+	.topbarContainer
+	{
+		.b7();
+		.centerBox();
+		.alignRight();
+
+		.relative();
+		.mainMenuIcon
+		{
+
+		    .ib();
+		    width: 32px;
+		    height: 32px;
+		    background-color: transparent;
+		    background: url('../img/admin_icons.png') top -8px left -60px no-repeat, transparent;
+		    .isBt();
+		     .absolute();
+		    top: 2px;
+		    left: 2px;
+		    &:hover 
+		    {
+		    	background-color: @darkHovered;
+		    }
+ 
+		}
+		.appMessagesContainer
+		{
+			width: 50px;
+			height: 50px;
+			.relative();
+			.alignCenter();
+		}
+		.appMessages:link, 
+		.appMessages:visited,
+		.appMessages
+		{
+			.block();
+			height: 50px;
+			width: 50px;
+			line-height: 3;
+			.relative();
+			font-size: 95%;
+			&:hover
+			{
+				background: @darkHovered;
+			}
+
+		}
+		.appNotif
+		{
+			.block();
+			.absolute();
+			width: 25px;
+			height: 25px;
+			top: 2px;
+			right: -20px;
+			line-height: 1.5;
+			// color: @newsLetterRedColor;
+			.bold();
+			.circle();
+			color: @mainLightBg;
+			.redBg();
+			&:hover
+			{
+
+			}
+		}
+		.welcomeAdmin
+		{
+			color: @cuteBlue;
+			height: 50px;
+			border-bottom: 2px solid @cuteBlue;
+			.isBt();
+			padding: 2px;
+			// line-height: 3;
+			&:hover
+			{
+				background-color: @darkHovered;
+			}
+			
+		}
+	}
+}
+.customEditor{
+	padding: 50px;
+a:link, a:visited
+	{
+		color: @niceBlue;
+	}
+}
+input, textarea
+{
+	.block();
+	.fullWidth();
+	.borderLess();
+	border-bottom: 2px solid @blueColor;
+	.nullBg();
+}
+textarea 
+{
+	min-height: 200px;
+}
+.success
+{
+	border-left: 2px solid @successColor;
+	padding: 20px;
+
+}
+.error
+{
+	border-left: 2px solid @newsLetterRedColor;
+	padding: 20px;
+}
+select 
+{
+	border: 1px solid #2BB6CF;
+	min-height: 35px;
+}
+.adminLeftSearch 
+{
+	.block();
+	.fullWidth();
+	padding-top: 15px;
+	input[type=text]
+	{
+		.block();
+		.fullWidth();
+		.borderLess();
+		border-bottom: 2px solid @cuteBlue;
+		color: @mainLightBg;
+		.nullBg();
+		padding: 2px;
+		padding-left: 5px;
+	}
+ 
+	.searchIcon 
+	{ 
+	    .ib();
+	    width: 32px;
+	    height: 32px;
+	    background-color: transparent;
+	    background: url('../img/admin_icons.png') top -8px left -25px no-repeat, transparent;
+	    .isBt();
+	    .absolute();
+	    top: 2px;
+	    right: 2px;
+	    &:hover 
+	    {
+	    	background-color: @darkHovered;
+	    }
+ 	}
+}
+.appCore
+{
+	.alignCenter();
+	// .b7();
+	.alignRight();
+	width: 60%;
+	margin-left: 25%;
+	padding-bottom: 100px;
+	article
+	{
+		background: @mainLightBg;
+		width: 45%;
+		margin: 10px;
+		.ib();
+		min-height: 250px;
+	}
+	// padding-left: 20%;
+	padding-top: 100px;
+	a:link,
+	a:visited
+	{
+		color: @blueColor;
+	}
+}
+video
+{
+	max-width: @fullWidth;
+
+}
+article 
+{
+	a:link, a:visited
+	{
+		color: @niceBlue;
+	
+    }	
+    padding: 20px;
+	h2
+	{
+		.alignLeft();
+		color: @blueColor;
+		padding: 10px;
+	
+}	&:hover
+	{
+		border-top: 2px solid @blueColor;
+	}
+}
+.adminProfileBt
+{
+	.ib();
+	height: 50px;
+	padding: 5px;
+	.alignCenter();
+	&:hover
+	{
+		background-color: @darkHovered;
+	}
+}
+.adminIcon
+{
+	.ib();
+	width: 32px;
+	height: 32px;
+	background: url('../img/admin_icons.png') top 0 left 2px no-repeat, transparent;
+	.isBt();
+	&:hover 
+	{
+		// background-color: @darkHovered;
+	}
+}
+.adminMainMenu 
+{
+	margin-top: 50px;
+	li 
+	{
+		.noStyle();
+		.block();
+
+		a:link, a:visited 
+		{
+			.block();
+			color: @mainLightBg;
+			padding: 2px;
+			.relative();
+		}
+		a::first-letter
+		{
+			.uppercase();
+		}
+		a:hover 
+		{
+			background: @darkHovered;
+			border-left: 2px solid @cuteBlue;
+		}
+	}
+}
+.p25
+{
+	padding: 25px;
+}
+article 
+{
+	img 
+	{
+		.ib();
+		max-width: @fullWidth;
+	}
+}
+.customEditor
+{
+	a:link, a:visited
+	{
+		color: @niceBlue;
+	}
+	img 
+	{
+		.ib();
+		max-width: @fullWidth;
+	}
+}
+.customEditorMenus
+{
+	.fixed();
+	bottom: 0;
+	left: 0;
+	width: @fullWidth;
+	height: 35px;
+	background: @darkText;
+}
+.modalContainer
+{
+	.modalFull
+	{
+		width: 80%;
+		min-height: 400px;
+	}
+}
+.galleriesSample
+{
+    img 
+    {
+        .ib();
+        min-width: 50px;
+        width: 25%;
+    }
+}
+.blueLink
+{
+	a:link,
+	a:visited
+	{
+		color: @blueColor;
+	}
+}
+.searchMenu
+{
+	.block();
+	min-height: 50px;
+	margin-bottom: 10px;
+	.alignLeft();
+	padding-left: 25px;
+	li 
+	{
+		.ib();
+		a:link,a:visited
+		{
+			.block();
+			height: 50px;
+			min-width: 50px;
+			color: @darkText;
+			&:hover
+			{
+				border-bottom: 2px solid @blueColor;
+			}
+		}
+		a.current 
+		{
+			border-bottom: 2px solid @blueColor;
+		}
+	}
+}
+.pagination
+{
+	a:link, a:visited
+	{
+		.blueBt();
+		width: 32px;
+		height: 32px;
+		max-width: 32px;
+		padding: 5px;
+	 	.alignCenter();
+	}
+	min-height: 100px;
+}
+.pagination-content
+{
+	min-height: 400px;
+	height: 400px;
+	max-height: 400px;
+	overflow-y: scroll;
+
+	article 
+	{
+		min-height: 400px;
+	}
+}
+@media (max-width: 800px)
+{
+	.modalContainer
+	{
+		.modalBox
+		{
+			width: 80%;
+
+		}
+	}
+	.leftBar
+	{
+		.hide();
+		width: 80%;
+	}
+	.appCore
+	{
+		margin: 0;
+		.fullWidth();
+		padding: 5px;
+		padding-top: 100px;
+		.alignCenter();
+		.ib,.ib2, .b7, article
+		{
+			.b8();
+			.centerBox();
+			margin-bottom: 10px;
+		}
+	}
+}
+.copyright
+{
+	color: @mainLightBg;
+	.block();
+	margin-top: 50px;
+	bottom: 0;
+	left: 0;
+	width: @fullWidth;
+	height: 50px;
+	.alignCenter();
+	padding-top: 5px;
+
+}
